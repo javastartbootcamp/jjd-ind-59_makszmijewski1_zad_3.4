@@ -2,8 +2,7 @@ package pl.javastart.task;
 
 import java.time.LocalDate;
 
-
-public class SpecialOffer{
+public class SpecialOffer {
 
     private Product product;
     private String offerDescription;

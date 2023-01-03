@@ -6,21 +6,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Category samochody = new Category("samochody", "najlepsze samochody");
-        Category slodycze = new Category("słodycze", "coś słodkiego dla każdego");
+        Category cars = new Category("cars", "the best cars");
+        Category candy = new Category("candy", "candy for everyone");
 
-        Product baton = new Product("baton", 2.5, "baton czekoladowy z orzechami", slodycze);
-        Product samochodBMW = new Product("samochódBMW", 100_000.0, "BMW M5 E60", samochody);
-        Product samochodMercedes = new Product("samochódMercedes", 100_000.0, "Mercedes W211 E55 AMG", samochody);
-        Product mandarynka = new Product("mandarynka", 0.5, "owoc mandarynka z Hiszpanii");
+        Product bar = new Product("bar", 2.5, "chocolate bar with nuts", candy);
+        Product carBmw = new Product("carBMW", 100_000.0, "BMW M5 E60", cars);
+        Product carMercedes = new Product("carMercedes", 100_000.0, "Mercedes W211 E55 AMG", cars);
+        Product tangerine = new Product("tangerine", 0.5, "tangerine fruit from Spain");
 
 
-        SpecialOffer specjalnaOferta = new SpecialOffer(samochodBMW, "20 procent rabatu do końca stycznia!", LocalDate.of(2023, 1, 1), LocalDate.of(2023, 1, 31), 0.2);
+        SpecialOffer specialOffer = new SpecialOffer(carBmw, "20 percent discount until"
+                + " the end of January!", LocalDate.of(2023, 1, 1),
+                LocalDate.of(2023, 1, 31), 0.2);
 
-        System.out.println(baton);
-        System.out.println(samochodBMW);
-        System.out.println(samochodMercedes);
-        System.out.println(mandarynka);
+        System.out.println(bar);
+        System.out.println(carBmw);
+        System.out.println(carMercedes);
+        System.out.println(tangerine);
 
     }
 }

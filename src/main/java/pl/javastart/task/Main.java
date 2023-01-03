@@ -18,10 +18,10 @@ public class Main {
                 + " the end of January!", LocalDate.of(2023, 1, 1),
                 LocalDate.of(2023, 1, 31), 0.2);
 
-        System.out.println(bar);
         System.out.println(carBmw);
         System.out.println(carMercedes);
         System.out.println(tangerine);
+        System.out.println(bar);
 
     }
 }

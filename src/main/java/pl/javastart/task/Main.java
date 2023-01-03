@@ -14,7 +14,6 @@ public class Main {
         Product carMercedes = new Product("carMercedes", 100_000.0, "Mercedes W211 E55 AMG", cars);
         Product tangerine = new Product("tangerine", 0.5, "tangerine fruit from Spain");
 
-
         SpecialOffer specialOffer = new SpecialOffer(carBmw, "20 percent discount until"
                 + " the end of January!", LocalDate.of(2023, 1, 1),
                 LocalDate.of(2023, 1, 31), 0.2);
